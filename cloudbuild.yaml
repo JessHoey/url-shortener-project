@@ -11,14 +11,14 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'JessCloudDeployment'
+      - 'JessCloudDeploymentTrigger'
       - '--image'
       - 'gcr.io/$_PROJECT_ID/$_BINARY_NAME:$COMMIT_SHA'
       - '--region'
       - '$_REGION'
       - '--allow-unauthenticated'
 images:
-  - 'gcr.io/$_PROJECT_ID/JessCloudDeployment:$COMMIT_SHA'
+  - 'gcr.io/$_PROJECT_ID/JessCloudDeploymentTrigger:$COMMIT_SHA'
 #Checking deployment 2.0.1
 
 
