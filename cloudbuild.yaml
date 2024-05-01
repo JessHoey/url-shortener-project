@@ -1,7 +1,7 @@
 steps:
   #Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$_PROJECT_ID/$_BINARY_NAME:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'gcr.io/ardent-course-420113/url-project-image:latest3', '.']
   #Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$_PROJECT_ID/$_BINARY_NAME:$COMMIT_SHA']
