@@ -19,5 +19,6 @@ steps:
       - '--allow-unauthenticated'
 images:
   - 'gcr.io/$_PROJECT_ID/JessCloudDeployment:$COMMIT_SHA'
+#Checking deployment
 
 
