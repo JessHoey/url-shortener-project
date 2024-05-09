@@ -17,7 +17,7 @@ steps:
       - '--region'
       - '$_REGION'
       - '--allow-unauthenticated'
-#images:
+images:
   - 'gcr.io/$_PROJECT_ID/jessclouddeploymentservice:$COMMIT_SHA'
 
 #deployment 0.0.1
