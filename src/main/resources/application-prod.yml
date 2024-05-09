@@ -1,4 +1,5 @@
 server:
+  port: 8080
   servlet:
     context-path:
 
@@ -7,11 +8,11 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql:///postgres
     username: postgres
-    password: X-(9}nl+m:lG5cFx
+    password: =KjH_`"G(sR\hFG,
     hikari:
       data-source-properties:
         socketFactory: com.google.cloud.sql.postgres.SocketFactory
-        cloudSqlInstance: ardent-course-420113:us-central1:project-deployment-sql
+        cloudSqlInstance: url-deployment:us-central1:url-deployment-instance
 
   jpa:
     hibernate:
